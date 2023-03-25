@@ -10,7 +10,7 @@ import { createUser } from '../../redux/userSlice';
 const schema = yup
   .object({
     email: yup.string().email().required(),
-    password: yup.string().min(6, 'Your password needs to be at least 6 characters.').max(47).required(),
+    password: yup.string().min(6, 'Your password needs to be at least 6 characters.').max(40).required(),
     username: yup
       .string()
       .matches(/^[a-z][a-z0-9]*$/, 'Is not in correct format')

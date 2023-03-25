@@ -36,7 +36,7 @@ const Header = () => {
             <Link className="header_login_createPost" to="/new-article">
               Create article
             </Link>
-            <article className="header_login_user" onClick={() => navigate('/edit-profile')}>
+            <article className="header_login_user" onClick={() => navigate('/profile')}>
               <span className="header_login_user_name">{user.username}</span>
               <Avatar alt={user.username} src={user.image} />
             </article>

@@ -44,11 +44,11 @@ export const getUser = createAsyncThunk(
 
 export const updateProfile = createAsyncThunk(
   'user/updateProfile',
-  async ({ username, email, password, bio, image }) =>
+  async ({ username, email, password, image }) =>
     await user
       .put(
         'user',
-        { user: { username, email, password, bio, image } },
+        { user: { username, email, password, image } },
         {
           headers: {
             'Content-Type': 'application/json',
